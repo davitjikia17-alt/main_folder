@@ -1,13 +1,15 @@
 import random
 
+size = 2
+
 
 def create_soccer_ground():
 
     ground = []
-    for i in range (2):
+    for i in range (size):
         row = []
         ground.append(row)
-        for j in range (2):
+        for j in range (size):
             row.append(" ")
 
     return ground
