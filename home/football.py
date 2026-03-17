@@ -1,13 +1,15 @@
 import random
 
+size = 2
+
 
 def create_soccer_ground():
 
     ground = []
-    for i in range (2):
+    for i in range (size):
         row = []
         ground.append(row)
-        for j in range (2):
+        for j in range (size):
             row.append(" ")
 
     return ground
@@ -23,30 +25,32 @@ def print_ground(ground):
 
 def get_player_choice():
 
-    choice_list = ["UL" , "UR" , "DL" , "DR"]
+    
     while True:
         player_choice = input("which way do you want to kick a ball? ")
-
-
-        if player_choice not in choice_list:
-            print(f"Invalid input. Use one of them : {choice_list}.")
-            continue
 
         if player_choice == "UL":
             row = 0
             col = 0
 
-        if player_choice == "UR":
+        elif player_choice == "UR":
             row = 0
             col = 1
 
-        if player_choice == "DL":
+        elif player_choice == "DL":
             row = 1
             col = 0
 
-        if player_choice == "DR":
+        elif player_choice == "DR":
             row = 1
             col = 1
+
+        else:
+            print(f"Invalid input. Use one of them : #UL #UR #DL #DR.")
+            
+            continue
+
+
 
         return row, col
 
