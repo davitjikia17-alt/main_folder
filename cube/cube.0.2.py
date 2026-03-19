@@ -292,33 +292,59 @@ def rotate_counterBack(cube):
 
 def rotate_r_RW(cube):
 
+
     pass
 
 
 def main():
     cube = create_solved_cube()
-    your_cube = create_your_cube()
+    #3your_cube = create_your_cube()
 
     print("solved cube:")
     printing_cube(cube)
 
-    print("your cube:")
-    printing_cube(your_cube)
-
     while True:
 
-        rotate_front(cube)
-        rotate_back(cube)
-        rotate_left(cube)
-        rotate_right(cube)
-        rotate_down(cube)
-        rotate_up(cube)
-
-        print("cube:")
+        #print("your cube:")
+        #printing_cube(your_cube)
+        print("solved cube:")
         printing_cube(cube)
 
-        continuou = int(input("enter y to continue or n to quit: "))
-        if continuou == "n":
+        actions = int(input("what would you like to do??\n"
+                            "1 | rotation left\n "
+                            "2 | rotation right\n "
+                            "3 | rotation up\n"
+                            "4 | rotation down\n"
+                            "5 | rotation front\n"
+                            "6 | rotation back\n "
+                            "7 | exit\n"))
+
+        if actions == 1:
+            rotate_left(cube)
+
+        if actions == 2:
+            rotate_right(cube)
+
+        if actions == 3:
+            rotate_up(cube)
+
+        if actions == 4:
+            rotate_down(cube)
+
+        if actions == 5:
+            rotate_front(cube)
+
+        if actions == 6:
+            rotate_back(cube)
+
+        if actions == 7:
             break
+
+
+    print("nice one !")
+
+
+
+
 
 main()
