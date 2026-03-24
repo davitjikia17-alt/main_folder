@@ -310,14 +310,15 @@ def main():
         print("solved cube:")
         printing_cube(cube)
 
-        actions = int(input("what would you like to do??\n"
-                            "1 | rotation left\n "
-                            "2 | rotation right\n "
-                            "3 | rotation up\n"
-                            "4 | rotation down\n"
-                            "5 | rotation front\n"
-                            "6 | rotation back\n "
-                            "7 | exit\n"))
+        actions = int(input("what would you like to do??"
+                            "\n1 | rotation left "
+                            "\n2 | rotation right "
+                            "\n3 | rotation up"
+                            "\n4 | rotation down"
+                            "\n5 | rotation front"
+                            "\n6 | rotation back "
+                            "\n7 | exit"
+                            "\nEnter:"))
 
         if actions == 1:
             rotate_left(cube)

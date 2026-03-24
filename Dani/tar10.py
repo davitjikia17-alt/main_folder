@@ -8,7 +8,6 @@ def count_high_scores(score1, score2, score3):
 
     if score3 >= 90:
         count += 1
-
     return count
 
 def main():
@@ -29,3 +28,4 @@ def main():
         print(f"{student}")
 
     print(f"Total number of eligible students: {len(eligible_students)}")
+main()

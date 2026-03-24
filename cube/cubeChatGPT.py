@@ -193,4 +193,3 @@ for move in moves:
 print(f"კუბის მდგომარეობა ტრიალის შემდეგ:")
 print_cube(cube)
 print(create_cube())
-

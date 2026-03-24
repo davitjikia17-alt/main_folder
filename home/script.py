@@ -1,12 +1,24 @@
-def main():
-    count = 0
-    while True:
-        for i  in range (492):
-            age = input("Enter your age: ")
-            hour = input("Enter your hours spent: ")
-            if age <= 18 and age >= 15 and hour >= 3:
-                count += 1
-        break
-    print("people who is true ",count)
+import random as rnd
 
-main()
+
+
+
+
+
+
+
+def main():
+    num = int(rnd.randint(1, 100))
+    trys = 0
+    while trys != 5 :
+        player = int(input("try to guess number from 1 to 100:"))
+        if player == num:
+            print("well done!!!")
+            break
+        else:
+            trys += 1
+
+    print(num)
+
+if __name__ == "__main__":
+    main()
