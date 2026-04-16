@@ -9,7 +9,7 @@ def numbers_bin(text):
 
     binary = []
 
-    while text > 0 :
+    while text != 0 :
         binary.append(text % 2)
         text = text // 2
 
@@ -28,7 +28,7 @@ def numbers_oct(text):
     return octal[::-1]
 
 
-def numbers_hex(text):
+def numbers_hex(text:int):
 
     if text == 0:
         return [0]

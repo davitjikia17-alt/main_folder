@@ -264,37 +264,6 @@ def printing_cube(cube):
     print()
 
 
-def rotate_counterRight(cube):
-    pass
-
-
-def rotate_counterLeft(cube):
-
-    pass
-
-
-def rotate_counterUp(cube):
-    pass
-
-
-def rotate_counterDown(cube):
-    pass
-
-
-def rotate_counterFront(cube):
-    pass
-
-
-def rotate_counterBack(cube):
-
-    pass
-
-
-def rotate_r_RW(cube):
-
-
-    pass
-
 
 def main():
     cube = create_solved_cube()
