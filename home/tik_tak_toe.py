@@ -102,6 +102,8 @@ def main():
             break
 
         current = switch_player(current)
+
+    print("game have finished")
 main()
 
 
